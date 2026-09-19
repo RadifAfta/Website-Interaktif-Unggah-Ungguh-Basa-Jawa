@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 200" width="160" height="200" fill="none">
+  <!-- Gunungan Jawa Siluet Modern -->
+  <path d="M80 8 C95 45 135 90 148 135 C156 160 145 185 130 188 C105 192 55 192 30 188 C15 185 4 160 12 135 C25 90 65 45 80 8 Z" 
+        fill="url(#gununganGrad)" stroke="#B68832" stroke-width="3"/>
+  <path d="M80 25 C90 55 120 95 132 132 C138 152 130 172 118 175 C98 178 62 178 42 175 C30 172 22 152 28 132 C40 95 70 55 80 25 Z" 
+        fill="#4A2E18" stroke="#D4A343" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <!-- Tangga / Garis Pohon Hayat -->
+  <line x1="80" y1="180" x2="80" y2="45" stroke="#E6C364" stroke-width="3" stroke-linecap="round"/>
+  <path d="M80 75 L60 65 M80 75 L100 65 M80 105 L55 90 M80 105 L105 90 M80 135 L50 118 M80 135 L110 118 M80 160 L55 145 M80 160 L105 145" 
+        stroke="#E6C364" stroke-width="2" stroke-linecap="round"/>
+  <!-- Gapura Bawah -->
+  <path d="M68 180 L68 150 Q80 142 92 150 L92 180 Z" fill="#D4A343"/>
+  <defs>
+    <linearGradient id="gununganGrad" x1="80" y1="8" x2="80" y2="192" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8C6226"/>
+      <stop offset="50%" stop-color="#4A2E18"/>
+      <stop offset="100%" stop-color="#2F1F17"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 240" width="200" height="240" fill="none">
+  <!-- Maskot Si Bagong / Si Bawor Cilik yang Ramah -->
+  <defs>
+    <radialGradient id="faceGrad" cx="100" cy="115" r="65" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFE7D0"/>
+      <stop offset="70%" stop-color="#FCD5B5"/>
+      <stop offset="100%" stop-color="#EBB38D"/>
+    </radialGradient>
+    <linearGradient id="blangkonGrad" x1="50" y1="50" x2="150" y2="100" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4A2E18"/>
+      <stop offset="50%" stop-color="#6B3E23"/>
+      <stop offset="100%" stop-color="#2F1F17"/>
+    </linearGradient>
+    <linearGradient id="clothGrad" x1="100" y1="170" x2="100" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#C05A3E"/>
+      <stop offset="100%" stop-color="#8F3922"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Tubuh & Pakaian Surjan Tradisional -->
+  <path d="M50 240 C50 190 70 175 100 175 C130 175 150 190 150 240 Z" fill="url(#clothGrad)" stroke="#4A2E18" stroke-width="3"/>
+  <!-- Kerah Surjan & Kalung Semar -->
+  <path d="M85 175 L100 200 L115 175" stroke="#E6C364" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <circle cx="100" cy="205" r="7" fill="#E6C364" stroke="#4A2E18" stroke-width="2"/>
+
+  <!-- Tangan Menyapa (Kanan Melambai) -->
+  <path d="M145 190 Q175 170 180 145 C182 135 170 130 162 140 Q155 155 140 175" fill="#FCD5B5" stroke="#4A2E18" stroke-width="3"/>
+  <!-- Tangan Kiri Menunjuk Santun -->
+  <path d="M55 190 Q30 200 25 215 Q20 225 35 228 Q50 220 65 198" fill="#FCD5B5" stroke="#4A2E18" stroke-width="3"/>
+
+  <!-- Telinga -->
+  <ellipse cx="48" cy="120" rx="14" ry="16" fill="#FCD5B5" stroke="#4A2E18" stroke-width="3"/>
+  <ellipse cx="152" cy="120" rx="14" ry="16" fill="#FCD5B5" stroke="#4A2E18" stroke-width="3"/>
+  <circle cx="48" cy="126" r="3" fill="#E6C364"/>
+  <circle cx="152" cy="126" r="3" fill="#E6C364"/>
+
+  <!-- Bentuk Kepala Bulat Lucu (Khas Karakter Bagong) -->
+  <ellipse cx="100" cy="122" rx="55" ry="52" fill="url(#faceGrad)" stroke="#4A2E18" stroke-width="3"/>
+
+  <!-- Blangkon Jawa Cantik -->
+  <path d="M48 95 C48 55 75 40 100 40 C125 40 152 55 152 95 C140 85 120 80 100 80 C80 80 60 85 48 95 Z" 
+        fill="url(#blangkonGrad)" stroke="#4A2E18" stroke-width="3"/>
+  <!-- Mondholan Belakang Blangkon -->
+  <ellipse cx="154" cy="98" rx="10" ry="12" fill="#4A2E18" stroke="#D4A343" stroke-width="2"/>
+  <!-- Lipatan & Corak Blangkon -->
+  <path d="M60 88 Q100 72 140 88" stroke="#D4A343" stroke-width="2" fill="none"/>
+  <path d="M70 75 Q100 62 130 75" stroke="#D4A343" stroke-width="1.5" stroke-dasharray="3 3" fill="none"/>
+
+  <!-- Alis Ramah -->
+  <path d="M72 102 Q82 96 92 102" stroke="#4A2E18" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+  <path d="M108 102 Q118 96 128 102" stroke="#4A2E18" stroke-width="3.5" stroke-linecap="round" fill="none"/>
+
+  <!-- Mata Berbinar Ramah -->
+  <ellipse cx="82" cy="116" rx="7" ry="9" fill="#2F1F17"/>
+  <circle cx="80" cy="113" r="2.5" fill="#FFFFFF"/>
+  <ellipse cx="118" cy="116" rx="7" ry="9" fill="#2F1F17"/>
+  <circle cx="116" cy="113" r="2.5" fill="#FFFFFF"/>
+
+  <!-- Pipi Merona (*Blush*) -->
+  <circle cx="68" cy="128" r="9" fill="#FF8D7B" opacity="0.6"/>
+  <circle cx="132" cy="128" r="9" fill="#FF8D7B" opacity="0.6"/>
+
+  <!-- Hidung Bulat Khas Bagong/Semar -->
+  <circle cx="100" cy="123" r="7.5" fill="#EBB38D" stroke="#4A2E18" stroke-width="2.5"/>
+
+  <!-- Senyum Lebar Bersahabat -->
+  <path d="M84 136 Q100 156 116 136 Z" fill="#C05A3E" stroke="#4A2E18" stroke-width="2.5"/>
+  <path d="M88 138 Q100 144 112 138" fill="#FFF"/>
+</svg>

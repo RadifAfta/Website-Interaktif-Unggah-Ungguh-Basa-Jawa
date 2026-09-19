@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="jv">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Unggah-Ungguh Basa Jawa | Media Sinau Interaktif</title>
+  <meta name="description" content="Media pembelajaran interaktif Unggah-Ungguh Basa Jawa (Ngoko, Ngoko Alus, Krama Lugu, Krama Alus) untuk siswa SD/SMP, proyektor kelas, dan penelitian akademik." />
+  <meta name="author" content="Dyah Retno Pambayun, S.Pd., Gr." />
+  <meta name="copyright" content="Dyah Retno Pambayun, S.Pd., Gr." />
+
+  <!-- Favicon / Ikon -->
+  <link rel="icon" type="image/svg+xml" href="assets/icons/gunungan.svg" />
+
+  <!-- Lembar Gaya Desain Budaya Jawa (Modular) -->
+  <link rel="stylesheet" href="css/variables.css" />
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/exercises.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+
+  <!-- ======================================================================
+       HEADER UTAMA & NAVIGASI
+       ====================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <!-- Brand & Logo -->
+      <a href="#beranda" class="brand-logo" data-navigate="beranda">
+        <img src="assets/icons/gunungan.svg" alt="Gunungan Jawa" class="brand-icon" />
+        <div class="brand-text">
+          <h1>Unggah-Ungguh Basa Jawa</h1>
+          <span>Media Pasinaon Interaktif</span>
+        </div>
+      </a>
+
+      <!-- Menu Navigasi Tab (Elegan & Bersih Tanpa Emoji Generik) -->
+      <nav class="main-nav" aria-label="Navigasi Utama">
+        <button class="nav-link active" data-target="beranda">
+          Beranda
+        </button>
+        <button class="nav-link" data-target="materi">
+          Materi
+        </button>
+        <button class="nav-link" data-target="pacelathon">
+          Pacelathon
+        </button>
+        <button class="nav-link" data-target="gladhen">
+          Gladhen
+        </button>
+      </nav>
+
+      <!-- Navigasi Utama -->
+    </div>
+  </header>
+
+  <!-- ======================================================================
+       KONTEN UTAMA APLIKASI
+       ====================================================================== -->
+  <main class="main-content">
+    <div class="container">
+
+      <!-- ------------------------------------------------------------------
+           SECTION 1: BERANDA / LANDING PAGE
+           ------------------------------------------------------------------ -->
+      <section id="beranda" class="app-section active">
+        <!-- Hero Card -->
+        <div class="hero-card">
+          <div class="hero-text-wrap">
+            <div class="hero-meta-row">
+              <span class="hero-badge">Media Pasinaon Basa Jawa</span>
+              <span class="hero-author-pill">Penyusun: <strong>Dyah Retno Pambayun, S.Pd., Gr.</strong></span>
+            </div>
+            <h2 class="hero-title">
+              Ajining Diri Saka Lathi, <span>Subasita ing Pasrawungan</span>
+            </h2>
+            <p class="hero-desc">
+              Sugeng rawuh! Media iki ngancani kanca-kanca kabeh nyinau 4 tataran unggah-ungguh basa Jawa (Ngoko Lugu, Ngoko Alus, Krama Lugu, lan Krama Alus) lumantar materi ringkes, tuladha pacelathon padinan, lan gladhen interaktif.
+            </p>
+            <div class="hero-actions">
+              <button class="btn btn-primary" data-navigate="materi">
+                Mulai Sinau Materi &rarr;
+              </button>
+              <button class="btn btn-secondary" data-navigate="gladhen">
+                Coba Gladhen & Kuis
+              </button>
+            </div>
+          </div>
+
+          <!-- Maskot Si Bagong -->
+          <div class="hero-mascot-wrap">
+            <div class="mascot-speech-bubble">
+              "Sugeng rawuh, Bocah Pinter! Ayo sinau basa Jawa sing becik lan trapsila!"
+            </div>
+            <img src="assets/illustrations/mascot-bagong.svg" alt="Maskot Si Bagong" class="hero-mascot-img" />
+          </div>
+        </div>
+
+        <!-- Bagian Preview Cepat 4 Tingkatan -->
+        <div class="section-header">
+          <span class="section-tag">Tataran Basa</span>
+          <h3 class="section-title">Papat Tingkatan Unggah-Ungguh Basa Jawa</h3>
+          <p class="section-subtitle">Saben tingkatan nduweni rasa basa lan paugeran kang trep manut sapa sing diajak guneman:</p>
+        </div>
+
+        <div class="level-preview-grid" id="homeLevelPreviewGrid">
+          <!-- Kartu ringkas di-generate otomatis dening JS -->
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------
+           SECTION 2: MATERI UNGGAH-UNGGUH
+           ------------------------------------------------------------------ -->
+      <section id="materi" class="app-section">
+        <div class="section-header">
+          <span class="section-tag">Pasinaon Jangkep</span>
+          <h2 class="section-title">Materi Unggah-Ungguh Basa Jawa</h2>
+          <div class="materi-pengantar-box" style="background: var(--c-cream-card); border: 1.5px solid var(--c-emas-border); border-radius: var(--radius-md); padding: 1.25rem 1.6rem; text-align: left; margin-top: 1.25rem; box-shadow: var(--c-card-shadow);">
+            <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.5rem;">
+              <h4 style="color: var(--c-sogan); margin: 0; font-size: 1.05rem; font-family: var(--font-title);">Pangerten Unggah-Ungguh Basa:</h4>
+              <span style="font-size: 0.825rem; color: var(--c-bata); font-weight: 700; background: rgba(194, 91, 50, 0.08); padding: 0.2rem 0.6rem; border-radius: var(--radius-full); border: 1px solid rgba(194, 91, 50, 0.2);">Penyusun: Dyah Retno Pambayun, S.Pd., Gr.</span>
+            </div>
+            <p id="materiPengantarText" style="margin: 0; font-size: 0.95rem; line-height: 1.65; color: var(--c-text-main);">
+              Unggah-ungguh basa gegayutan karo solah tingkah utawa tatakrama wong Jawa. Unggah-ungguh basa miturut panganggone kaperang dadi loro, yaiku ragam ngoko lan ragam krama.
+            </p>
+          </div>
+        </div>
+
+        <!-- Filter Tab -->
+        <div class="filter-tabs">
+          <button class="filter-btn active" data-filter="kabeh">Kabeh Materi (4)</button>
+          <button class="filter-btn" data-filter="ngoko-lugu">1. Ngoko Lugu</button>
+          <button class="filter-btn" data-filter="ngoko-alus">2. Ngoko Alus</button>
+          <button class="filter-btn" data-filter="krama-lugu">3. Krama Lugu</button>
+          <button class="filter-btn" data-filter="krama-alus">4. Krama Alus</button>
+        </div>
+
+        <!-- Container Kartu Materi Dinamis -->
+        <div class="materi-cards-container" id="materiCardsContainer">
+          <!-- Di-render dinamis saka js/data/materiData.js -->
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------
+           SECTION 3: CONTOH DIALOG (PACELATHON)
+           ------------------------------------------------------------------ -->
+      <section id="pacelathon" class="app-section">
+        <div class="section-header">
+          <span class="section-tag">Tuladha Padinan</span>
+          <h2 class="section-title">Pacelathon Unggah-Ungguh</h2>
+          <p class="section-subtitle">
+            Cermati carane para tokoh migunakake basa Jawa manut kahanan lan lawan gunemane:
+          </p>
+        </div>
+
+        <!-- Pemilih Skenario -->
+        <div class="scenario-selector" id="dialogScenarioSelector">
+          <!-- Tombol skenario di-render dening JS -->
+        </div>
+
+        <!-- Bar Informasi Skenario & Tombol Terjemahan -->
+        <div class="dialog-controls-bar">
+          <div class="scenario-info-text">
+            <h4 id="scenarioCurrentTitle">Judhul Skenario</h4>
+            <p id="scenarioCurrentDesc">Katrangan kahanan pacelathon...</p>
+            <span id="scenarioCurrentRagam" style="display: inline-block; font-size: 0.8rem; font-weight: 700; color: var(--c-bata); margin-top: 0.2rem;"></span>
+          </div>
+          <div>
+            <button class="btn-toggle-translation" id="btnToggleAllTranslations">
+              Tampilake Kabeh Terjemahan
+            </button>
+          </div>
+        </div>
+
+        <!-- Panggung Percakapan (Speech Bubbles) -->
+        <div class="dialog-conversation-stage" id="dialogConversationStage">
+          <!-- Balon percakapan di-render dening JS saka js/data/dialogData.js -->
+        </div>
+      </section>
+
+      <!-- ------------------------------------------------------------------
+           SECTION 4: LATIHAN INTERAKTIF (GLADHEN)
+           ------------------------------------------------------------------ -->
+      <section id="gladhen" class="app-section">
+        <div class="section-header">
+          <span class="section-tag">Uji Kawruh</span>
+          <h2 class="section-title">Gladhen & Uji Kemampuan</h2>
+          <p class="section-subtitle">
+            Piliha jinis latihan ing ngisor iki kanggo ngasah kawruh unggah-ungguh basa Jawamu:
+          </p>
+        </div>
+
+        <!-- Tab Pemilih Jinis Gladhen (Teks Bersih & Elegan) -->
+        <div class="exercise-type-tabs">
+          <button class="exercise-type-btn active" data-exercise-tab="quiz">
+            Kuis Situasi (Pilihan Ganda)
+          </button>
+          <button class="exercise-type-btn" data-exercise-tab="match">
+            Pasangaken Tembung (Ngoko - Krama)
+          </button>
+        </div>
+
+        <!-- Pane 1: Kuis Pilihan Ganda -->
+        <div class="exercise-view-pane active" id="quizViewPane">
+          <div class="quiz-wrapper">
+            <div class="quiz-card" id="quizCardContainer">
+              <!-- Di-render otomatis saka js/modules/exerciseQuiz.js -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Pane 2: Pasang Tembung -->
+        <div class="exercise-view-pane" id="matchViewPane">
+          <div class="match-game-wrapper">
+            <div class="match-game-board" id="matchGameBoardContainer">
+              <!-- Di-render otomatis saka js/modules/exerciseMatch.js -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gladhen section ends -->
+
+    </div>
+  </main>
+
+  <!-- ======================================================================
+       FOOTER
+       ====================================================================== -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <div class="footer-quote">
+        "Basa iku busananing bangsa, ngurmati liyan lumantar tembung kang santun lan prayoga."
+      </div>
+      <div class="footer-author-card">
+        <span class="footer-author-role">Penyusun & Pengembang Materi:</span>
+        <span class="footer-author-name">Dyah Retno Pambayun, S.Pd., Gr.</span>
+      </div>
+      <div class="footer-credit">
+        Media Pembelajaran Interaktif Unggah-Ungguh Basa Jawa &copy; 2026. Hak cipta materi kagunganipun Dyah Retno Pambayun, S.Pd., Gr. Digawe kanggo kaperluan pasinaon lan panaliten.
+      </div>
+    </div>
+  </footer>
+
+  <!-- Entry Script JavaScript Modul -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

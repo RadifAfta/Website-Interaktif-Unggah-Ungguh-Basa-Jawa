@@ -1,0 +1,468 @@
+/**
+ * =============================================================================
+ * CSS EXERCISES: KUIS PILIHAN GANDA & GAME COCOK-MENCOCOKKAN KATA (MATCHING)
+ * =============================================================================
+ */
+
+/* Sub-Tab Gladhen (Kuis vs Pasang Tembung) */
+.exercise-type-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.exercise-type-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.75rem 1.6rem;
+  border-radius: var(--radius-full);
+  font-size: 1rem;
+  font-weight: 700;
+  border: 2px solid var(--c-sogan-border);
+  background: #FFF;
+  color: var(--c-sogan);
+  transition: all 0.2s ease;
+}
+
+.exercise-type-btn:hover {
+  background: var(--c-cream-card);
+  border-color: var(--c-sogan);
+}
+
+.exercise-type-btn.active {
+  background: var(--c-sogan);
+  color: #FFF;
+  border-color: var(--c-sogan);
+  box-shadow: 0 4px 14px rgba(74, 46, 24, 0.2);
+}
+
+.exercise-view-pane {
+  display: none;
+}
+
+.exercise-view-pane.active {
+  display: block;
+  animation: fadeIn 0.3s ease;
+}
+
+/* ==========================================================================
+   A. KUIS PILIHAN GANDA (SITUASI)
+   ========================================================================== */
+.quiz-wrapper {
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.quiz-card {
+  background: #FFF;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--c-border);
+  box-shadow: var(--c-card-shadow);
+  padding: 2.25rem;
+  position: relative;
+}
+
+.quiz-progress-bar-wrap {
+  width: 100%;
+  height: 8px;
+  background: var(--c-cream-card);
+  border-radius: var(--radius-full);
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+  border: 1px solid var(--c-border);
+}
+
+.quiz-progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--c-bata) 0%, var(--c-emas) 100%);
+  border-radius: var(--radius-full);
+  transition: width 0.3s ease;
+}
+
+.quiz-meta-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.quiz-step-count {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--c-bata);
+  background: var(--c-bata-surface);
+  padding: 0.25rem 0.75rem;
+  border-radius: var(--radius-full);
+}
+
+.quiz-context-box {
+  background: var(--c-cream-bg);
+  border-left: 4px solid var(--c-emas);
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  color: var(--c-sogan-dark);
+  margin-bottom: 1.25rem;
+  font-style: italic;
+}
+
+.quiz-question-text {
+  font-size: var(--font-xl);
+  color: var(--c-sogan-dark);
+  margin-bottom: 1.75rem;
+  line-height: 1.35;
+}
+
+/* Daftar Opsi Jawaban */
+.quiz-options-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+
+.quiz-option-btn {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 1.4rem;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--c-border);
+  background: #FFF;
+  color: var(--c-text-main);
+  font-size: var(--font-base);
+  font-weight: 600;
+  text-align: left;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+  position: relative;
+}
+
+.quiz-option-btn:hover:not(:disabled) {
+  border-color: var(--c-emas-dark);
+  background: var(--c-cream-card);
+  transform: translateX(4px);
+}
+
+.quiz-option-letter {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--c-cream-card);
+  border: 1.5px solid var(--c-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  color: var(--c-sogan);
+  flex-shrink: 0;
+}
+
+/* Status Jawaban Kuis */
+.quiz-option-btn.correct {
+  border-color: var(--c-lumut);
+  background: var(--c-lumut-surface);
+  color: var(--c-lumut-dark);
+}
+
+.quiz-option-btn.correct .quiz-option-letter {
+  background: var(--c-lumut);
+  color: #FFF;
+  border-color: var(--c-lumut);
+}
+
+.quiz-option-btn.wrong {
+  border-color: var(--c-bata);
+  background: var(--c-bata-surface);
+  color: var(--c-bata-hover);
+  opacity: 0.8;
+}
+
+.quiz-option-btn.wrong .quiz-option-letter {
+  background: var(--c-bata);
+  color: #FFF;
+  border-color: var(--c-bata);
+}
+
+/* Kotak Ulasan / Feedback Hasil Kuis */
+.quiz-feedback-card {
+  display: none;
+  margin-top: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  border-radius: var(--radius-md);
+  border: 2px solid transparent;
+  animation: fadeIn 0.25s ease;
+}
+
+.quiz-feedback-card.show {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+}
+
+.quiz-feedback-card.is-correct {
+  background: var(--c-lumut-surface);
+  border-color: var(--c-lumut);
+  color: var(--c-lumut-dark);
+}
+
+.quiz-feedback-card.is-wrong {
+  background: var(--c-bata-surface);
+  border-color: var(--c-bata);
+  color: var(--c-bata-hover);
+}
+
+.feedback-mascot-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.feedback-content h5 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  color: inherit;
+}
+
+.feedback-content p {
+  font-size: 0.925rem;
+  margin-bottom: 0.85rem;
+  line-height: 1.5;
+}
+
+.btn-next-quiz {
+  align-self: flex-start;
+  padding: 0.5rem 1.2rem;
+  font-size: 0.875rem;
+}
+
+/* ==========================================================================
+   B. GAME COCOK-MENCOCOKKAN KATA (PASANGAKEN TEMBUNG)
+   ========================================================================== */
+.match-game-wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.match-game-board {
+  background: #FFF;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--c-border);
+  box-shadow: var(--c-card-shadow);
+  padding: 2.25rem;
+}
+
+.match-instructions {
+  background: var(--c-cream-card);
+  border: 1.5px dashed var(--c-emas-dark);
+  border-radius: var(--radius-md);
+  padding: 1rem 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.match-instructions-text {
+  font-size: 0.95rem;
+  color: var(--c-sogan-dark);
+  font-weight: 600;
+}
+
+.match-score-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 1rem;
+  background: #FFF;
+  border: 1px solid var(--c-emas-border);
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--c-sogan);
+}
+
+/* Dua Kolom Kartu Kata */
+.match-columns-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  position: relative;
+}
+
+.match-column-header {
+  text-align: center;
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+
+.match-col-ngoko .match-column-header {
+  background: var(--c-bata-surface);
+  color: var(--c-bata);
+  border: 1px solid var(--c-level-ngoko-lugu-border);
+}
+
+.match-col-krama .match-column-header {
+  background: var(--c-emas-light);
+  color: var(--c-emas-dark);
+  border: 1px solid var(--c-emas-border);
+}
+
+.match-cards-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.match-card {
+  padding: 1rem 1.25rem;
+  border-radius: var(--radius-md);
+  border: 2px solid var(--c-border);
+  background: #FFF;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--c-text-main);
+  text-align: center;
+  transition: all 0.2s ease;
+  user-select: none;
+  position: relative;
+}
+
+.match-card:hover:not(.matched) {
+  border-color: var(--c-emas-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(74, 46, 24, 0.08);
+}
+
+.match-card.selected {
+  border-color: var(--c-bata);
+  background: var(--c-bata-surface);
+  color: var(--c-bata);
+  box-shadow: 0 0 0 3px rgba(191, 83, 59, 0.25);
+}
+
+.match-card.matched {
+  border-color: var(--c-lumut);
+  background: var(--c-lumut-surface);
+  color: var(--c-lumut-dark);
+  cursor: default;
+  opacity: 0.85;
+}
+
+.match-card.matched::after {
+  content: "✔";
+  margin-left: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--c-lumut);
+}
+
+.match-card.shake-wrong {
+  animation: shakeAnim 0.4s ease;
+  border-color: #D32F2F;
+  background: #FFEBEE;
+}
+
+@keyframes shakeAnim {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-6px); }
+  75% { transform: translateX(6px); }
+}
+
+/* Selesai Game Pasangan */
+.match-success-overlay {
+  display: none;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  animation: fadeIn 0.4s ease;
+}
+
+.match-success-overlay.show {
+  display: block;
+}
+
+.match-success-title {
+  font-size: var(--font-2xl);
+  color: var(--c-sogan-dark);
+  margin-bottom: 0.5rem;
+}
+
+/* ==========================================================================
+   C. SECTION RINGKASAN & CATATAN PRESTASI
+   ========================================================================== */
+.progress-summary-card {
+  background: #FFF;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--c-emas-border);
+  box-shadow: var(--c-card-shadow);
+  padding: 2.5rem;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.progress-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.stat-box {
+  background: var(--c-cream-card);
+  border: 1px solid var(--c-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.stat-value {
+  font-family: var(--font-title);
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--c-bata);
+  line-height: 1;
+  margin-bottom: 0.4rem;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--c-text-muted);
+  font-weight: 600;
+}
+
+.badge-showcase-box {
+  background: var(--c-cream-bg);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  border: 1px solid var(--c-border);
+  margin-bottom: 2rem;
+}
+
+.badge-item {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.badge-medal-icon {
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.badge-info h4 {
+  font-size: 1.2rem;
+  color: var(--c-sogan);
+  margin-bottom: 0.2rem;
+}
+
+.badge-info p {
+  font-size: 0.85rem;
+  color: var(--c-text-muted);
+  margin: 0;
+}

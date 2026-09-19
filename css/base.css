@@ -1,0 +1,257 @@
+/**
+ * =============================================================================
+ * CSS BASE: TATA LETAK DASAR, HEADER, NAVIGASI, & LATAR BELAKANG
+ * =============================================================================
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap');
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--c-cream-bg);
+  background-image: 
+    radial-gradient(circle at 10% 10%, rgba(212, 163, 67, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 90% 90%, rgba(191, 83, 59, 0.04) 0%, transparent 40%),
+    url('../assets/motifs/batik-kawung.svg');
+  background-repeat: repeat;
+  background-size: auto, auto, 120px 120px;
+  color: var(--c-text-main);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: font-size 0.2s ease, background-color 0.2s ease;
+}
+
+/* Aksesibilitas: Teks seleksi */
+::selection {
+  background-color: var(--c-emas-light);
+  color: var(--c-sogan);
+}
+
+/* Tipografi Utama */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-title);
+  color: var(--c-sogan);
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+p {
+  font-size: var(--font-base);
+  margin-bottom: 0.8rem;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  border: none;
+  background: none;
+  transition: all 0.2s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+/* Container Umum */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* ==========================================================================
+   HEADER APLIKASI
+   ========================================================================== */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(252, 249, 242, 0.94);
+  backdrop-filter: blur(10px);
+  border-bottom: 2px solid var(--c-border);
+  box-shadow: 0 4px 18px rgba(74, 46, 24, 0.05);
+}
+
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: var(--header-height);
+  gap: 1rem;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.brand-icon {
+  width: 38px;
+  height: 48px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 4px rgba(74, 46, 24, 0.15));
+}
+
+.brand-text h1 {
+  font-size: 1.25rem;
+  color: var(--c-sogan);
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.brand-text span {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--c-bata);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Navigasi Utama (Elegan, Tipografi Bersih) */
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  background-color: rgba(74, 46, 24, 0.04);
+  padding: 0.3rem 0.4rem;
+  border-radius: var(--radius-full);
+  border: 1px solid var(--c-border);
+}
+
+.nav-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1.15rem;
+  border-radius: var(--radius-full);
+  font-weight: 600;
+  font-size: 0.925rem;
+  color: var(--c-text-muted);
+  position: relative;
+  letter-spacing: 0.01em;
+  transition: all 0.22s cubic-bezier(0.2, 0.8, 0.2, 1);
+  border: 1px solid transparent;
+}
+
+.nav-link:hover {
+  color: var(--c-sogan-dark);
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.nav-link.active {
+  color: var(--c-sogan-dark);
+  background-color: #FFFFFF;
+  border-color: var(--c-emas-border);
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(74, 46, 24, 0.08);
+}
+
+
+
+/* ==========================================================================
+   AREA KONTEN & TAB SECTION
+   ========================================================================== */
+.main-content {
+  flex: 1;
+  padding-top: 1.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.app-section {
+  display: none;
+  animation: fadeIn 0.35s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+.app-section.active {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ==========================================================================
+   FOOTER APLIKASI
+   ========================================================================== */
+.site-footer {
+  margin-top: auto;
+  background-color: var(--c-sogan-dark);
+  color: #F8EFE4;
+  border-top: 3px solid var(--c-emas);
+  padding: 2.5rem 0 1.5rem;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.footer-quote {
+  font-family: var(--font-quote);
+  font-style: italic;
+  color: var(--c-emas-light);
+  font-size: 1.05rem;
+  max-width: 650px;
+}
+
+.footer-author-card {
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1.4rem;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(212, 163, 67, 0.4);
+  border-radius: var(--radius-full);
+}
+
+.footer-author-role {
+  color: #DDD0C0;
+  font-size: 0.85rem;
+}
+
+.footer-author-name {
+  color: var(--c-emas-light);
+  font-weight: 700;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+.footer-credit {
+  color: #C8B39F;
+  font-size: 0.825rem;
+  max-width: 700px;
+  line-height: 1.5;
+}

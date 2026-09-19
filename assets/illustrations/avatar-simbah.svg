@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" fill="none">
+  <circle cx="50" cy="50" r="48" fill="#F4EDE0" stroke="#4A2E18" stroke-width="3"/>
+  <!-- Beskap / Klambi Tradisional Simbah -->
+  <path d="M22 95 C22 75 35 68 50 68 C65 68 78 75 78 95 Z" fill="#4A2E18" stroke="#2F1F17" stroke-width="2.5"/>
+  <path d="M50 68 L50 95" stroke="#D4A343" stroke-width="2"/>
+  <!-- Kepala Simbah -->
+  <circle cx="50" cy="46" r="21" fill="#EBB38D" stroke="#4A2E18" stroke-width="2.5"/>
+  <!-- Blangkon Simbah -->
+  <path d="M30 42 C30 24 42 18 50 18 C60 18 70 24 70 42 C64 36 56 34 50 34 C42 34 35 36 30 42 Z" fill="#6B3E23" stroke="#4A2E18" stroke-width="2"/>
+  <circle cx="71" cy="38" r="4" fill="#4A2E18"/> <!-- Mondholan -->
+  <!-- Kacamata Simbah -->
+  <circle cx="43" cy="45" r="5" stroke="#4A2E18" stroke-width="1.8" fill="none"/>
+  <circle cx="57" cy="45" r="5" stroke="#4A2E18" stroke-width="1.8" fill="none"/>
+  <line x1="48" y1="45" x2="52" y2="45" stroke="#4A2E18" stroke-width="1.8"/>
+  <!-- Kumis Putih Simbah yang Bijak -->
+  <path d="M42 54 Q50 56 58 54" stroke="#FFF" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- Senyum Hangat -->
+  <path d="M46 59 Q50 62 54 59" stroke="#4A2E18" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+</svg>

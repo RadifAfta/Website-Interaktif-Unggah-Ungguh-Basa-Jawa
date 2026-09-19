@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" fill="none">
+  <circle cx="50" cy="50" r="48" fill="#FDFBF7" stroke="#4A2E18" stroke-width="3"/>
+  <!-- Kemeja Batik Sogan Bapak -->
+  <path d="M22 95 C22 75 35 68 50 68 C65 68 78 75 78 95 Z" fill="#4A2E18" stroke="#2F1F17" stroke-width="2.5"/>
+  <path d="M44 68 L50 78 L56 68" stroke="#D4A343" stroke-width="2" fill="none"/>
+  <!-- Kepala -->
+  <circle cx="50" cy="45" r="22" fill="#FCD5B5" stroke="#4A2E18" stroke-width="2.5"/>
+  <!-- Rambut Rapi Berwibawa -->
+  <path d="M28 40 C28 22 42 20 50 20 C62 20 72 25 72 40 C66 30 58 28 50 28 C40 28 32 32 28 40 Z" fill="#2F1F17"/>
+  <!-- Mata & Alis Tegas Sopan -->
+  <circle cx="43" cy="44" r="2.5" fill="#2F1F17"/>
+  <circle cx="57" cy="44" r="2.5" fill="#2F1F17"/>
+  <path d="M39 37 Q43 35 47 37" stroke="#4A2E18" stroke-width="2" stroke-linecap="round"/>
+  <path d="M53 37 Q57 35 61 37" stroke="#4A2E18" stroke-width="2" stroke-linecap="round"/>
+  <!-- Kumis Tipis Rapi -->
+  <path d="M45 50 Q50 51 55 50" stroke="#2F1F17" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Senyum Ramah -->
+  <path d="M46 54 Q50 57 54 54" stroke="#4A2E18" stroke-width="1.8" stroke-linecap="round" fill="none"/>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" fill="none">
+  <circle cx="50" cy="50" r="48" fill="#FDFBF7" stroke="#4A2E18" stroke-width="3"/>
+  <!-- Baju Remaja Putri Ayu / Hani -->
+  <path d="M22 95 C22 75 35 68 50 68 C65 68 78 75 78 95 Z" fill="#C05A3E" stroke="#4A2E18" stroke-width="2.5"/>
+  <path d="M46 68 L50 78 L54 68" stroke="#FFE7D0" stroke-width="2" fill="none"/>
+  <!-- Kepala -->
+  <circle cx="50" cy="45" r="22" fill="#FCD5B5" stroke="#4A2E18" stroke-width="2.5"/>
+  <!-- Rambut Kuncir Emas Khas Remaja -->
+  <path d="M28 42 C28 22 40 18 50 18 C65 18 72 26 72 45 C66 32 58 28 50 28 C40 28 32 34 28 42 Z" fill="#2F1F17"/>
+  <!-- Pita Rambut Kuning Emas -->
+  <ellipse cx="68" cy="32" rx="5" ry="7" fill="#D4A343" stroke="#4A2E18" stroke-width="1.5"/>
+  <!-- Mata & Alis Ramah -->
+  <circle cx="43" cy="44" r="2.5" fill="#2F1F17"/>
+  <circle cx="57" cy="44" r="2.5" fill="#2F1F17"/>
+  <path d="M40 38 Q43 36 46 38" stroke="#4A2E18" stroke-width="1.5" stroke-linecap="round"/>
+  <path d="M54 38 Q57 36 60 38" stroke="#4A2E18" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Senyum Ceria -->
+  <path d="M46 52 Q50 57 54 52" stroke="#C05A3E" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <circle cx="39" cy="48" r="3" fill="#FF8D7B" opacity="0.6"/>
+  <circle cx="61" cy="48" r="3" fill="#FF8D7B" opacity="0.6"/>
+</svg>

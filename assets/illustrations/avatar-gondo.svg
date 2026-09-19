@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100" fill="none">
+  <circle cx="50" cy="50" r="48" fill="#F4F8F5" stroke="#4A2E18" stroke-width="3"/>
+  <!-- Kemeja Kerja Mas Gondo (Warna Hijau Sage / Kerah Rapi) -->
+  <path d="M22 95 C22 75 35 68 50 68 C65 68 78 75 78 95 Z" fill="#476C55" stroke="#4A2E18" stroke-width="2.5"/>
+  <path d="M40 68 L50 78 L60 68" stroke="#FFF" stroke-width="2" fill="none"/>
+  <!-- Kepala -->
+  <circle cx="50" cy="45" r="22" fill="#FCD5B5" stroke="#4A2E18" stroke-width="2.5"/>
+  <!-- Gaya Rambut Belah Samping Rapi Khas Pegawai Muda -->
+  <path d="M28 42 C28 24 38 20 50 20 C64 20 72 26 72 42 C66 32 56 26 46 26 C36 26 30 34 28 42 Z" fill="#2A170A"/>
+  <!-- Mata Ramah -->
+  <circle cx="43" cy="45" r="2.5" fill="#2A170A"/>
+  <circle cx="57" cy="45" r="2.5" fill="#2A170A"/>
+  <path d="M39 39 Q43 37 47 39" stroke="#4A2E18" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M53 39 Q57 37 61 39" stroke="#4A2E18" stroke-width="1.8" stroke-linecap="round"/>
+  <!-- Senyum Sopan -->
+  <path d="M46 54 Q50 58 54 54" stroke="#4A2E18" stroke-width="2" stroke-linecap="round" fill="none"/>
+  <circle cx="38" cy="50" r="3" fill="#FF8D7B" opacity="0.4"/>
+  <circle cx="62" cy="50" r="3" fill="#FF8D7B" opacity="0.4"/>
+</svg>
