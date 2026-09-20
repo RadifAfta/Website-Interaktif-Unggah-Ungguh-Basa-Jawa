@@ -69,6 +69,11 @@
     font-size: 1.05rem;
   }
 
+  .brand-text span {
+    font-size: 0.68rem;
+    letter-spacing: 0.02em;
+  }
+
   .hero-title {
     font-size: 1.75rem;
   }
