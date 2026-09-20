@@ -1,6 +1,6 @@
 /**
  * =============================================================================
- * MODUL RENDER VIDEO: PRAKTIK TUTUR UNGGAH-UNGGUH BASA JAWA
+ * MODUL RENDER VIDEO: TULADHA VIDEO UNGGAH-UNGGUH BASA JAWA
  * =============================================================================
  */
 
@@ -26,31 +26,13 @@ export const RenderVideo = {
             class="video-element"
             aria-label="${video.judul}">
             <source src="${video.src}" type="video/mp4" />
-            <p>Browser sampeyan ora nyengkuyung pemutar video HTML5. Mangga download file video ing <a href="${video.src}">kene</a>.</p>
+            <p>Browser sampeyan ora nyengkuyung pemutar video HTML5.</p>
           </video>
         </div>
 
-        <div class="video-card-body">
-          <div class="video-card-header">
-            <span class="video-num-badge">${video.nomor}</span>
-            <div class="video-title-group">
-              <h3 class="video-card-title">${video.judul}</h3>
-              <span class="video-category-tag" style="color: ${video.badgeColor}; background: ${video.badgeBg}; border: 1px solid ${video.badgeBorder};">
-                ${video.ragamBasa}
-              </span>
-            </div>
-          </div>
-
-          <p class="video-card-desc">
-            ${video.deskripsi}
-          </p>
-
-          <div class="video-keypoints-box">
-            <h5 class="video-keypoints-title">Bab kang Kudu Digatekake:</h5>
-            <ul class="video-keypoints-list">
-              ${video.poinPenting.map(p => `<li>${p}</li>`).join("")}
-            </ul>
-          </div>
+        <div class="video-card-body-simple">
+          <span class="video-num-badge">${video.nomor}</span>
+          <h4 class="video-card-title-simple">${video.judul}</h4>
         </div>
       </article>
     `).join("");
@@ -59,7 +41,7 @@ export const RenderVideo = {
   bindEvents(container) {
     const videos = container.querySelectorAll("video");
 
-    // Pause other videos when one video plays
+    // Otomatis jeda video lain jika salah satu video diputar
     videos.forEach((vid) => {
       vid.addEventListener("play", () => {
         videos.forEach((otherVid) => {

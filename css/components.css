@@ -910,3 +910,19 @@
   color: var(--c-text-muted);
   line-height: 1.55;
 }
+
+.video-card-body-simple {
+  padding: 1rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: #FFF;
+}
+
+.video-card-title-simple {
+  font-size: 1.05rem;
+  color: var(--c-sogan-dark);
+  font-family: var(--font-title);
+  margin: 0;
+  font-weight: 700;
+}
