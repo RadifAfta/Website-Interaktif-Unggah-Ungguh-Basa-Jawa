@@ -784,3 +784,129 @@
 .btn-peek-translation:hover {
   color: var(--c-bata-hover);
 }
+
+/* ==========================================================================
+   5. PRAKTIK TUTUR (VIDEO PEMBELAJARAN)
+   ========================================================================== */
+.video-grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.75rem;
+  margin-top: 1.5rem;
+}
+
+.video-card {
+  background: #FFF;
+  border: 1.5px solid var(--c-emas-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--c-card-shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.video-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(74, 46, 24, 0.12);
+}
+
+.video-player-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background-color: #1A110B;
+  overflow: hidden;
+}
+
+.video-element {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  outline: none;
+}
+
+.video-card-body {
+  padding: 1.35rem 1.45rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.video-card-header {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.video-num-badge {
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-full);
+  background: var(--c-cream-card);
+  border: 1px solid var(--c-emas-border);
+  color: var(--c-sogan);
+  font-family: var(--font-title);
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+.video-title-group {
+  flex-grow: 1;
+}
+
+.video-card-title {
+  font-size: 1.15rem;
+  color: var(--c-sogan-dark);
+  font-family: var(--font-title);
+  margin: 0 0 0.35rem 0;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.video-category-tag {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--radius-full);
+}
+
+.video-card-desc {
+  font-size: 0.9rem;
+  color: var(--c-text-main);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+  flex-grow: 1;
+}
+
+.video-keypoints-box {
+  background: #FAF5EB;
+  border: 1px dashed var(--c-emas-border);
+  border-radius: var(--radius-sm);
+  padding: 0.85rem 1rem;
+  margin-top: auto;
+}
+
+.video-keypoints-title {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--c-sogan);
+  margin: 0 0 0.4rem 0;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.video-keypoints-list {
+  margin: 0;
+  padding-left: 1.15rem;
+  font-size: 0.825rem;
+  color: var(--c-text-muted);
+  line-height: 1.55;
+}

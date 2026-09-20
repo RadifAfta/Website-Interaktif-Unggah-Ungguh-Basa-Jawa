@@ -47,6 +47,11 @@ export const Navigation = {
     const sections = document.querySelectorAll(".app-section");
     sections.forEach(sec => sec.classList.remove("active"));
 
+    // Hentikan pemutaran video jika pengguna berpindah halaman
+    document.querySelectorAll("video").forEach(v => {
+      if (!v.paused) v.pause();
+    });
+
     // Tampilkan section yang dipilih
     const targetSection = document.getElementById(targetId);
     if (targetSection) {

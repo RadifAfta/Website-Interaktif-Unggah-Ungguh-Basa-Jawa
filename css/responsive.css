@@ -40,10 +40,18 @@
   .match-columns-grid {
     gap: 1.5rem;
   }
+
+  .video-grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Layar Smartphone (< 768px) */
 @media (max-width: 768px) {
+  .video-grid-container {
+    grid-template-columns: 1fr;
+  }
+
   .header-inner {
     height: auto;
     padding-top: 0.75rem;

@@ -7,16 +7,18 @@
 import { Navigation } from "./modules/navigation.js";
 import { RenderMateri } from "./modules/renderMateri.js";
 import { RenderDialog } from "./modules/renderDialog.js";
+import { RenderVideo } from "./modules/renderVideo.js";
 import { ExerciseQuiz } from "./modules/exerciseQuiz.js";
 import { ExerciseMatch } from "./modules/exerciseMatch.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. Inisialisasi Navigasi SPA (Beranda, Materi, Pacelathon, Gladhen)
+  // 1. Inisialisasi Navigasi SPA (Beranda, Materi, Pacelathon, Praktik Tutur, Gladhen)
   Navigation.init();
 
   // 2. Inisialisasi Modul Konten & Latihan Interaktif
   RenderMateri.init();
   RenderDialog.init();
+  RenderVideo.init();
   ExerciseQuiz.init();
   ExerciseMatch.init();
 
