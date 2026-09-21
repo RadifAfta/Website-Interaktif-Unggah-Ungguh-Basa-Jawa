@@ -48,6 +48,13 @@
 
 /* Layar Smartphone (< 768px) */
 @media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 100vw;
+    box-sizing: border-box;
+  }
+
   .video-grid-container {
     grid-template-columns: 1fr;
   }
@@ -57,6 +64,7 @@
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     flex-wrap: wrap;
+    max-width: 100%;
   }
 
   .main-nav {
@@ -82,8 +90,80 @@
     letter-spacing: 0.02em;
   }
 
+  .hero-card {
+    padding: 1.5rem 1.15rem;
+  }
+
   .hero-title {
     font-size: 1.75rem;
+  }
+
+  /* Materi Card Mobile - Mencegah Elemen Terpotong */
+  .materi-card-header {
+    padding: 1.15rem 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.65rem;
+  }
+
+  .materi-card-body {
+    padding: 1.25rem 1rem;
+    gap: 1.25rem;
+  }
+
+  .materi-intro-desc {
+    font-size: 0.95rem;
+    line-height: 1.65;
+  }
+
+  .paugeran-box {
+    padding: 0.95rem 1.1rem;
+    font-size: 0.875rem;
+  }
+
+  .materi-pengantar-box {
+    padding: 1rem 1.15rem !important;
+  }
+
+  .materi-pengantar-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+  }
+
+  .filter-tabs {
+    gap: 0.4rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .filter-btn {
+    padding: 0.425rem 0.85rem;
+    font-size: 0.825rem;
+  }
+
+  /* Tabel Kosa Kata Mobile - Scroll Halus di dalam Wrapper */
+  .vocabulary-table-wrapper {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: var(--radius-sm);
+  }
+
+  .vocabulary-mini-table {
+    min-width: 350px;
+    font-size: 0.8rem;
+  }
+
+  .vocabulary-mini-table th {
+    padding: 0.5rem 0.55rem;
+    font-size: 0.78rem;
+    white-space: nowrap;
+  }
+
+  .vocabulary-mini-table td {
+    padding: 0.45rem 0.55rem;
+    font-size: 0.78rem;
   }
 
   .dialog-bubble-row {
@@ -119,8 +199,20 @@
 /* Layar HP Sangat Mungil (< 480px) */
 @media (max-width: 480px) {
   .container {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .materi-card-header {
+    padding: 1rem 0.85rem;
+  }
+
+  .materi-card-body {
+    padding: 1rem 0.75rem;
+  }
+
+  .vocabulary-mini-table {
+    min-width: 320px;
   }
 
   .quiz-card,
